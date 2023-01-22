@@ -1,0 +1,10 @@
+.intro__list-item {
+    padding: 0px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.75rem;
+    /* 12/16 = 0,75 */
+    line-height: 1.5;
+    color: #FFFFFF;
+}

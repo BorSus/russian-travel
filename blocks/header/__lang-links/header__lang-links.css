@@ -1,0 +1,14 @@
+.header__lang-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0px 6px;
+    /* resolution 320 = 14px 0px 8px */
+    padding: 0%;
+}
+
+@media screen and (max-width: 320px) {
+    .header__lang-links {
+        margin: 14px 0px 8px;
+    }
+}

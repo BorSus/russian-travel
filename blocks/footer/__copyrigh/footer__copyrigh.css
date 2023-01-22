@@ -1,0 +1,17 @@
+.footer__copyrigh {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.875rem;
+    /* 14/16 = 0,875 */
+    line-height: 1.14;
+    /* resolution 320 = 1 */
+    color: #FFFFFF;
+}
+@media screen and (max-width: 745px) {
+    .footer__copyrigh {
+        line-height: 1;
+        margin: 0px 0px 0px 16px;
+    }
+}

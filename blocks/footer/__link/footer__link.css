@@ -1,0 +1,21 @@
+.footer__link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    /* 16/16 =  1 */
+    /* resolution 320 = 24/16 = 1,5 */
+    line-height: 1.12;
+    /* resolution 320 = 1 */
+    color: #FFFFFF;
+    transition: opacity .5s linear;
+}
+.footer__link:hover{
+    opacity: 0.5;
+}
+@media screen and (max-width: 745px) {
+    .footer__link {
+        font-size: 1.5rem;
+        line-height: 1;
+    }
+}

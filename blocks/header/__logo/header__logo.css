@@ -1,0 +1,16 @@
+.header__logo {
+    margin: 0px;
+    padding: 0px;
+    object-fit: cover;
+    height: 52px;
+    width: 176px;
+    /* resolution 320 = 142|42 */
+    align-self: center;
+}
+
+@media screen and (max-width: 320px) {
+    .header__logo {
+        height: 42px;
+        width: 142px;
+    }
+}

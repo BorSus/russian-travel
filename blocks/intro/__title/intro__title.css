@@ -1,0 +1,19 @@
+.intro__title {
+    margin: 0px;
+    padding: 0px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 3.375rem;
+    /* 54/16 = 3,375 */
+    /* resolution 320 = 32/16 = 2 */
+    line-height: 1.07;
+    /* resolution 320 = 1.09 */
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 320px) {
+    .intro__title {
+        font-size: 2rem;
+        line-height: 1.09;
+    }
+}
