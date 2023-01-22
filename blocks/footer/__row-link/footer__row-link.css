@@ -1,9 +1,8 @@
 .footer__row-link {
-    margin: 0px 18px 0px 0px;
+  margin: 0px 18px 0px 0px;
 }
 @media screen and (max-width: 745px) {
-    .footer__row-link {
-        margin: 0px 0px 0px 16px;
-    }
+  .footer__row-link {
+    margin: 0px 0px 0px 16px;
+  }
 }
-
