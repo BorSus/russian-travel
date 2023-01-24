@@ -1,0 +1,28 @@
+/*Надо исправить: Удалите неиспользуемые шрифты и правила @font-face, ассоциированные с ними.
+Файлы со шрифтами весят довольно много, и чем больше вы укажете файлов - тем больше трафик и тем дольше будет загружаться сайт.
+По дизайну, в этом проекте используются три начертания: 400, 700, 900 (Regular, Bold, Black)
+!ОК!*/
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./InterWeb/Inter-Regular.woff2?v=3.19') format('woff2'),
+    url('./InterWeb/Inter-Regular.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('./InterWeb/Inter-Bold.woff2?v=3.19') format('woff2'),
+    url('./InterWeb/Inter-Bold.woff?v=3.19') format('woff');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('./InterWeb/Inter-Black.woff2?v=3.19') format('woff2'),
+    url('./InterWeb/Inter-Black.woff?v=3.19') format('woff');
+}

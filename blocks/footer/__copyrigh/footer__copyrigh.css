@@ -9,9 +9,8 @@
   /* resolution 320 = 1 */
   color: #ffffff;
 }
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 600px) {
   .footer__copyrigh {
     line-height: 1;
-    margin: 0px 0px 0px 16px;
   }
 }

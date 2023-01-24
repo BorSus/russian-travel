@@ -1,4 +1,6 @@
 .footer__link {
+  padding: 0px;
+  margin: 0px;
   text-decoration: none;
   font-style: normal;
   font-weight: 400;
@@ -11,9 +13,10 @@
   transition: opacity 0.5s linear;
 }
 .footer__link:hover {
-  opacity: 0.5;
+  opacity: 0.8; /*По макету нужно сделать состояние наведения opacity: 0.8; OK*/
 }
-@media screen and (max-width: 745px) {
+
+@media screen and (max-width: 600px) {
   .footer__link {
     font-size: 1.5rem;
     line-height: 1;

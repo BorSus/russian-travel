@@ -10,5 +10,5 @@
   transition: opacity 0.5s linear;
 }
 .place__link:hover {
-  opacity: 0.5;
+  opacity: 0.8; /*По макету нужно сделать состояние наведения opacity: 0.8; OK */
 }

@@ -1,11 +1,8 @@
 .cover__title {
   position: relative;
-  padding: 245px 0px 0px;
-  /* resolution 1024 = padding: 195px 0px 0px; */
-  /* resolution 768 =  padding: 115px 0px 0px; */
-  /* resolution 320 =  padding: 33px 0px 0px; */
-  margin: 0px auto;
-  width: 560px;
+  padding: 0px;
+  margin: 0px auto; /*margin -- нужно центрировать элемент через flex на родительском элементе, это сохранит центрирование при изменении количества строчек текста OK*/
+  max-width: 560px;
   /* resolution 320 = width: 288px;*/
   font-style: normal;
   font-weight: 900;
@@ -18,29 +15,15 @@
   color: #ffffff;
 }
 
-@media screen and (max-width: 1024px) {
-  .cover__title {
-    padding: 195px 0px 0px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .cover__title {
-    padding: 115px 0px 0px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .cover__title {
-    font-size: calc(2rem + (100vw * 0.02));
-    width: calc(250px + 10vw);
+    font-size: 9.375vw;
   }
 }
 
 @media screen and (max-width: 320px) {
   .cover__title {
-    padding: 33px 0px 0px;
-    width: 250px;
+    max-width: 250px;
     font-size: 2rem;
     line-height: 1.09;
   }

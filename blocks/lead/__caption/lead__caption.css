@@ -1,12 +1,18 @@
 .lead__caption {
-    margin: 8px 0px 0px;
-    padding: 0px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.625rem;
-    /* 10/16 = 0,625 */
-    line-height: 1.4;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+  margin: 8px 0px 0px;
+  padding: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  /* 10/16 = 0,625 */
+  line-height: 1.4;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .lead__caption {
+    margin: 8px 0px 0px 24px; /*Боковой отступ не совпадает с макетом 768px OK*/
+  }
 }

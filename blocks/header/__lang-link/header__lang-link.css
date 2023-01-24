@@ -1,23 +1,25 @@
 .header__lang-link {
-    margin: 0px 18px 0px 0px;
-    padding: 0px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.5rem;
-    /* 24/16 = 1.5 */
-    /* resolution 320 = 18px/16px= 1,125rem*/
-    line-height: 1.17;
-    /* resolution 320 = 1.11*/
-    color: #FFFFFF;
+  /*Можно лучше: отступы между дочерними элементами можно сделать через flex + column-gap, а собственные отступы элементов обнулить. OK*/
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  /* 24/16 = 1.5 */
+  /* resolution 320 = 18px/16px= 1,125rem*/
+  line-height: 1.17;
+  /* resolution 320 = 1.11*/
+  color: #ffffff;
+  transition: opacity 0.5s linear;
 }
-
+/*Нужно сделать состояние наведения :hover (такой же как у других аналогичных элементов на странице), это требование чеклиста OK*/
+.header__lang-link:hover {
+  opacity: 0.8;
+}
 @media screen and (max-width: 320px) {
-    .header__lang-link {
-        font-size: 1.125rem;
-        line-height: 1.11;
-    }
-}
-
-.header__lang-link:last-child {
-    margin: 0px;
+  .header__lang-link {
+    font-size: 1.125rem;
+    line-height: 1.11;
+  }
 }

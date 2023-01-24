@@ -1,12 +1,15 @@
 .places {
   box-sizing: border-box;
   margin: 95px auto 0px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 80px;
   /* resolution 1024 = margin: 92px auto 0px; */
   /* resolution 768 = margin: 88px auto 0px;*/
   /* resolution 320 = margin: 64px auto 0px; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 80px;
+  /* resolution 1024 = row-gap: 80px; */
+  /* resolution 768 = row-gap: 73px;*/
+  /* resolution 320 = row-gap: 50px; */
   padding: 0px 148px;
   /* resolution 1024 = padding: 0px 48px; */
   /* resolution 768 = padding: 0px 24px;*/
@@ -23,6 +26,7 @@
   .places {
     margin: 88px auto 0px;
     padding: 0px 24px;
+    row-gap: 73px; /*Отступ между блоками не совпадает с макетом 320px/768 OK*/
   }
 }
 
@@ -30,5 +34,6 @@
   .places {
     margin: 64px auto 0px;
     padding: 0px 0px;
+    row-gap: 50px; /*Отступ между блоками не совпадает с макетом 320px/768 OK*/
   }
 }

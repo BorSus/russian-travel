@@ -1,40 +1,43 @@
 .photo-grid__items {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    list-style-type: none;
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
-    /* resolution 1024 = minmax(300px, 1fr) gap: 14px; */
-    /* resolution 768 =  minmax(352px, 1fr) gap: 16px; */
-    /* resolution 320 = minmax(288px, 1fr) gap: 12px; */
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  list-style-type: none;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+  /* resolution 1024 = minmax(300px, 1fr) gap: 14px; */
+  /* resolution 768 =  minmax(352px, 1fr) gap: 16px; */
+  /* resolution 320 = minmax(288px, 1fr) gap: 12px; */
 }
 
 @media screen and (max-width: 1024px) {
-    .photo-grid__items {
-        gap: 14px;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+  .photo-grid__items {
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .photo-grid__items {
-        gap: 16px;
-        grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
-    }
+  .photo-grid__items {
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+  }
 }
+/*Брейкпоинты не сгруппированы. Если два брейкпоинта имеют небольшую пиксельную разницу в медиазапросе имеет смысл изменить разрешение и привести их к одинаковому значению.
+В этом файле и во всем проекте. OK*/
+/*от 425 и до 768 пикселей — от большого смартфона до вертикального положения планшета,*/
 
-@media screen and (max-width: 400px) {
-    .photo-grid__items {
-        gap: 14px;
-        grid-template-columns: repeat(auto-fit, minmax(calc(288px + 1vw), 1fr));
-    }
+@media screen and (max-width: 425px) {
+  .photo-grid__items {
+    gap: 14px;
+    grid-template-columns: repeat(auto-fit, minmax(calc(288px + 0.4vw), 1fr));
+  }
 }
 
 @media screen and (max-width: 320px) {
-    .photo-grid__items {
-        gap: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
-    }
+  .photo-grid__items {
+    gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  }
 }

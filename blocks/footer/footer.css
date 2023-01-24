@@ -7,9 +7,17 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 768px) {
   .footer {
+    padding: 0px 24px 24px; /*Боковые отступы не совпадают с макетом 768px OK*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    padding: 0px 0px 24px 16px;
+    justify-content: flex-start;
     flex-direction: column;
-    padding: 0px 0px 24px;
+    row-gap: 48px; /*Можно лучше: отступы между дочерними блоками можно сделать через flex + column-gap на этом элементе, а собственные боковые отступы дочерних элементов обнулить. OK*/
   }
 }

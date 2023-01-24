@@ -4,18 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Шрифты -- это код сторонних разработчиков, сейчас подключение файла не совпадает с правилами БЭМ, которые применяются в нашем курсе.
+Подробнее про это в разделе "Подключаем код сторонних разработчиков" и в задании этого раздела OK-->
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
     <title>Путешествия по России</title>
   </head>
 
   <body class="root">
     <!--======header====-->
+    <!--контент должен центрироваться по ширине и не быть шире чем в макете (макет для 1280px - это максимальная ширина), сейчас контент растягивается по ширине браузера OK-->
     <header class="header">
       <img src="./images/svg/__logo.svg" alt="Логотип Путешествие по России" class="header__logo" />
       <ul class="header__lang-links">
-        <li class="header__lang-link header__lang-link_status_check">Ru</li>
-        <li class="header__lang-link header__lang-link_status_uncheck">En</li>
+        <!--Можно лучше: отступы между дочерними элементами можно сделать через flex + column-gap, а собственные отступы элементов обнулить. ОК-->
+        <li class="header__lang-item">
+          <!--Элементы для выбора языка нужно сделать ссылками OK-->
+          <a href="#" class="header__lang-link header__lang-link_active">Ru</a>
+        </li>
+        <li class="header__lang-item">
+          <a href="#" class="header__lang-link">En</a>
+        </li>
       </ul>
     </header>
 
@@ -23,9 +31,21 @@
     <main class="content">
       <!--======lead====-->
       <section class="lead">
-        <h1 class="lead__title">Путешествия по России</h1>
+        <h1 class="lead__title">Путешествия по&nbsp;России</h1>
+        <!--Можно лучше: использовать неразрывный пробел OK-->
         <p class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</p>
-
+        <!--Отступ до изображения не совпадает с макетом 768px OK-->
+        <!--<figure> Можно лучше: здесь можно использовать более семантичные теги для иллюстрации. 
+          значение по умолчанию
+          figure {
+          display : block;
+          margin-top: 1em;
+          margin-bottom: 1em;
+          margin-left: 40px;
+          margin-right: 40px;
+          } 
+        Для обнуления надо вводить дополнительный класс.
+        Можно редактировать normolize-->
         <picture>
           <source srcset="./images/img_lead.jpg" media="(min-width: 800px)" />
           <img
@@ -35,6 +55,7 @@
           />
         </picture>
         <p class="lead__caption">ваша полка — верхняя</p>
+        <!--Боковой отступ не совпадает с макетом 768px OK-->
       </section>
 
       <!--======intro====-->
@@ -53,22 +74,22 @@
         </p>
         <ul class="intro__list">
           <li class="intro__list-item">
-            Часовых поясов <span class="intro__list-item intro__list-item_digit">11</span>
+            Часовых поясов
+            <span class="intro__digit">11</span>
+            <!--Нужно использовать новый класс для стилизации фрагмента текста, это уже не "элемент списка"Модификатор будет не нужен-->
           </li>
           <li class="intro__list-item">
             Объектов природного наследия ЮНЕСКО
-            <span class="intro__list-item intro__list-item_digit">12</span>
+            <span class="intro__digit">12</span>
           </li>
           <li class="intro__list-item">
             Объектов культурного наследия ЮНЕСКО
-            <span class="intro__list-item intro__list-item_digit">16</span>
+            <span class="intro__digit">16</span>
           </li>
           <li class="intro__list-item">
-            Природных заповедников <span class="intro__list-item intro__list-item_digit">105</span>
+            Природных заповедников <span class="intro__digit">105</span>
           </li>
-          <li class="intro__list-item">
-            Аэропортов <span class="intro__list-item intro__list-item_digit">241</span>
-          </li>
+          <li class="intro__list-item">Аэропортов <span class="intro__digit">241</span></li>
         </ul>
       </section>
 
@@ -225,7 +246,8 @@
           </picture>
 
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <h3 class="place__url-heading">url</h3>
+            <!--Можно лучше: использовать тег заголовка следующего уровня OK-->
             <a href="http://park-kosa.ru/" class="place__link">park-kosa.ru</a>
           </div>
           <div class="place__text">
@@ -257,7 +279,7 @@
           </picture>
 
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <h3 class="place__url-heading">url</h3>
             <a
               href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
               class="place__link"
@@ -285,7 +307,7 @@
           <h2 class="place__title">Алтай</h2>
 
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <h3 class="place__url-heading">url</h3>
             <a href="https://www.youtube.com/watch?v=7ZEsoV7kWAQ" class="place__link">YouTube</a>
           </div>
 
@@ -322,7 +344,7 @@
           </picture>
 
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <h3 class="place__url-heading">url</h3>
             <a href="https://vk.com/baikalmile" class="place__link">https://vk.com/baikalmile</a>
           </div>
           <div class="place__text">
@@ -353,7 +375,7 @@
           </picture>
 
           <div class="place__website">
-            <p class="place__url-heading">URL</p>
+            <h3 class="place__url-heading">url</h3>
             <a href="http://vodlozero.ru/" class="place__link">http://vodlozero.ru/</a>
           </div>
           <div class="place__text">
@@ -374,18 +396,17 @@
       <!--======cover====-->
 
       <section class="cover">
+        <!--Лишний элемент. Его можно удалить, а стили перенести на родительский: тег <a> допускает несколько дочерних тегов. OK-->
         <a
           href="https://stampsy.com/na-elektrichkakh-do-baikala"
-          class="cover__link"
+          class="cover__overlay"
           target="_blank"
         >
-          <div class="cover__overlay">
-            <h2 class="cover__title">До Байкала «на собаках»</h2>
-            <p class="cover__subtitle">
-              По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие от&nbsp;столицы
-              до&nbsp;Байкала на&nbsp;электричках
-            </p>
-          </div>
+          <h2 class="cover__title">До Байкала «на&nbsp;собаках»</h2>
+          <p class="cover__subtitle">
+            По&nbsp;мотивам учебной темы о&nbsp;Транссибе&nbsp;&mdash; путешествие от&nbsp;столицы
+            до&nbsp;Байкала на&nbsp;электричках
+          </p>
         </a>
       </section>
     </main>
