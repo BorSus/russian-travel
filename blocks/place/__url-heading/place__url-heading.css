@@ -1,5 +1,5 @@
 .place__url-heading {
-  margin: 0px 0px 12px;
+  margin: 0px;
   padding: 0px;
   font-style: normal;
   font-weight: 400;
@@ -9,10 +9,8 @@
   /* resolution 320|768 = 1 */
   letter-spacing: 2px;
   color: #aaaaaa;
-  text-transform: uppercase; /*Можно лучше: вместо явно заглавных букв можно использовать text-transform: uppercase*/
+  text-transform: uppercase;
 }
-/*Значения в media не должны дублировать уже заданные значения, 
-это приводит к сложностям сопровождения из-за необходимости менять значения в двух/трех местах !ОК!*/
 @media screen and (max-width: 768px) {
   .place__url-heading {
     line-height: 1;

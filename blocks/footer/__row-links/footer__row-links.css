@@ -10,7 +10,7 @@
   .footer__row-links {
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: 32px; /*Можно лучше: отступы между дочерними блоками можно сделать через flex + column-gap на этом элементе, а собственные боковые отступы дочерних элементов обнулить. OK*/
+    row-gap: 32px;
     column-gap: 0px;
   }
 }

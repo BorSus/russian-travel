@@ -9,7 +9,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    padding: 0px 24px 24px; /*Боковые отступы не совпадают с макетом 768px OK*/
+    padding: 0px 24px 24px;
   }
 }
 
@@ -18,6 +18,6 @@
     padding: 0px 0px 24px 16px;
     justify-content: flex-start;
     flex-direction: column;
-    row-gap: 48px; /*Можно лучше: отступы между дочерними блоками можно сделать через flex + column-gap на этом элементе, а собственные боковые отступы дочерних элементов обнулить. OK*/
+    row-gap: 48px;
   }
 }

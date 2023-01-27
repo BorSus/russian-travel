@@ -2,7 +2,7 @@
   padding: 0px;
   text-align: left;
   font-style: normal;
-  font-weight: 700; /*По макету в этих строках тексты с различными начертаниями шрифта. Сверьтесь с макетом (для текста font-weight: 700;, а для значения 400). OK*/
+  font-weight: 700;
   font-size: 0.75rem;
   /* 12/16 = 0,75 */
   line-height: 1.5;

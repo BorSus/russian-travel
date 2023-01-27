@@ -4,7 +4,7 @@
   max-width: 1280px;
   box-sizing: border-box;
   padding: 0px;
-  margin: 92px 48px 92px; /*Отступ между секциями не совпадает с макетом 320px/768 ok*/
+  margin: 92px 48px 92px;
   /* resolution 1024 = margin: 92px 0px 92px; */
   /* resolution 768 =  margin: 90px 0px 88px; */
   /* resolution 320 =  margin: 66px 0px 64px; */
@@ -13,18 +13,18 @@
 @media screen and (max-width: 1024px) {
   .cover {
     width: 100%;
-    margin: 92px 0px 92px; /*Отступ между секциями не совпадает с макетом 320px/768 ok*/
+    margin: 92px 0px 92px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover {
-    margin: 90px 0px 88px; /*Отступ между секциями не совпадает с макетом 320px/768 OK*/
+    margin: 90px 0px 88px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .cover {
-    margin: 66px 0px 64px; /*Отступ между секциями не совпадает с макетом 320px/768 OK*/
+    margin: 66px 0px 64px;
   }
 }

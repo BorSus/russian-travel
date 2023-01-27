@@ -1,6 +1,6 @@
 .places {
   box-sizing: border-box;
-  margin: 95px auto 0px;
+  margin: 92px auto 0px;
   /* resolution 1024 = margin: 92px auto 0px; */
   /* resolution 768 = margin: 88px auto 0px;*/
   /* resolution 320 = margin: 64px auto 0px; */
@@ -19,6 +19,7 @@
 @media screen and (max-width: 1024px) {
   .places {
     padding: 0px 48px;
+    row-gap: 80px;
   }
 }
 
@@ -26,7 +27,7 @@
   .places {
     margin: 88px auto 0px;
     padding: 0px 24px;
-    row-gap: 73px; /*Отступ между блоками не совпадает с макетом 320px/768 OK*/
+    row-gap: 73px;
   }
 }
 
@@ -34,6 +35,6 @@
   .places {
     margin: 64px auto 0px;
     padding: 0px 0px;
-    row-gap: 50px; /*Отступ между блоками не совпадает с макетом 320px/768 OK*/
+    row-gap: 50px;
   }
 }

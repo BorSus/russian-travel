@@ -3,12 +3,11 @@
   padding: 0px;
   font-style: normal;
   font-weight: 400;
-  font-size: 1.125rem;
-  /* 18/16 =  1,125 */
+  font-size: 18px;
   line-height: 1.22;
   color: #ffffff;
   transition: opacity 0.5s linear;
 }
 .place__link:hover {
-  opacity: 0.8; /*По макету нужно сделать состояние наведения opacity: 0.8; OK */
+  opacity: 0.8;
 }

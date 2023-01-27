@@ -4,14 +4,13 @@
   text-decoration: none;
   text-decoration-line: none;
   position: relative;
-  /*margin -- нужно центрировать элемент через flex на родительском элементе, это сохранит центрирование при изменении количества строчек текста OK*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
-  min-height: 740px; /*height: 740px; -- Фиксированные значения высоты могут привести к проблемам с версткой при добавлении контента, будет выходит за границы элемента. Вместо 'height' больше подходит 'min-height'. ПРОБЛЕМА!!*/
+  min-height: 740px;
   /* resolution 1024 = height: 640px; */
   /* resolution 768 = height: 480px; */
   /* resolution 320 = height: 200px; */
@@ -36,22 +35,20 @@
   opacity: 0.8;
 }
 @media screen and (max-width: 1024px) {
+  /*Значения в media не должны дублировать уже заданные значения, это приводит к сложностям сопровождения из-за необходимости менять значения в двух/трех местах. OK*/
   .cover__overlay {
-    width: 100%;
     min-height: 640px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .cover__overlay {
-    width: 100%;
     min-height: 480px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .cover__overlay {
-    width: 100%;
     min-height: 200px;
   }
 }

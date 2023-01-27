@@ -1,7 +1,7 @@
 .cover__title {
   position: relative;
   padding: 0px;
-  margin: 0px auto; /*margin -- нужно центрировать элемент через flex на родительском элементе, это сохранит центрирование при изменении количества строчек текста OK*/
+  margin: 0px auto;
   max-width: 560px;
   /* resolution 320 = width: 288px;*/
   font-style: normal;

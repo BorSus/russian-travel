@@ -1,7 +1,6 @@
 .header__lang-links {
   list-style-type: none;
   display: flex;
-  /*Можно лучше: отступы между дочерними элементами можно сделать через flex + column-gap, а собственные отступы элементов обнулить. ОК*/
   column-gap: 18px;
   justify-content: space-between;
   margin: 18px 0px 6px;
